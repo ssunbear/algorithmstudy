@@ -4,8 +4,7 @@ Pi=list(map(int, sys.stdin.readline().split()))
 time=0
 Pi.sort()
 for i in range(n):
-    for j in range(n):
-        if i>=j:
-            time+=Pi[j]
+    for j in range(i+1):
+        time+=Pi[j]
     
 print(time)
